@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="/properties.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="menu-bg bg-primary">
+      <nav>
+        <div class="logo">
+          <img
+            src="https://demoapus1.com/homez/wp-content/uploads/2022/12/logo.svg"
+            alt=""
+          />
+        </div>
+
+        <ul class="nav-ul" id="menuList">
+          <li class="link"><a href="/index.html">Home</a></li>
+          <li class="link"><a href="/properties.html">Properties</a></li>
+          <li class="link"><a href="/agent.html">Agent</a></li>
+          <li class="link"><a href="/blog.html">Blog</a></li>
+          <li class="link"><a href="/contact.html">Contact</a></li>
+          <li class="link"><a href="">Login/Register</a></li>
+          <li class="prot"><a href="">Add Properties</a></li>
+        </ul>
+
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </section>
+
+    <section class="proper">
+      <div class="p-6 bg-background">
+        <h1 class="text-3xl font-bold text-foreground">Properties</h1>
+        <nav class="mt-2 text-muted-foreground">
+          <a href="#" class="hover:underline">Home</a> /
+          <span class="font-medium">Properties </span>
+        </nav>
+        <div class="flex items-center justify-between mt-4">
+          <button
+            class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-md"
+          >
+            More Filter
+          </button>
+          <span class="text-muted-foreground"
+            >Showing 1 – 10 of 15 results</span
+          >
+          <div class="relative">
+            <select
+              class="bg-input text-foreground border border-border rounded-md p-2"
+            >
+              <option>Sort by: Default</option>
+              <option>Sort by: Price</option>
+              <option>Sort by: Date</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex space-x-4 p-4 featured-bg">
+        <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+          <div class="relative">
+            <span
+              class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded"
+              >FEATURED</span
+            >
+            <div class="w-full h-[280px] object-cover">
+              <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide
+                  ><img
+                    src="/images/slider/pexels-curtis-adams-1694007-5178055.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/slider/pexels-binyaminmellish-1396122.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img src="/images/p16.jpg" alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- <img src="https://placehold.co/300x200" alt="Quality House For Sale" class="w-full h-70 object-cover" /> -->
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-bold">$2,500</h2>
+            <h3 class="text-lg font-semibold">Quality House For Sale</h3>
+            <p class="text-sm text-muted-foreground">873 Bedford Ave</p>
+            <div class="flex space-x-6 text-sm mt-2">
+              <span> <i class="fa-solid fa-bed"></i> 10 Beds</span>
+              <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+              <span> <i class="fa-regular fa-square"></i> 500 sqft</span>
+            </div>
+            <p class="text-sm text-muted-foreground mt-2">For Sale</p>
+          </div>
+        </div>
+        <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+          <div class="relative">
+            <span
+              class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded"
+              >FEATURED</span
+            >
+            <div class="w-full h-[280px] object-cover">
+              <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide
+                  ><img
+                    src="/images/slider/pexels-binyaminmellish-1396122.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img src="/images/p16.jpg" alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- <img src="https://placehold.co/300x200" alt="Diamond Family Home" class="w-full h-70 object-cover" /> -->
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-bold">$4,500</h2>
+            <h3 class="text-lg font-semibold">Diamond Family Home</h3>
+            <p class="text-sm text-muted-foreground">254 S 2nd St, Brooklyn</p>
+            <div class="flex space-x-6 text-sm mt-2">
+              <span> <i class="fa-solid fa-bed"></i>4 Beds</span>
+              <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+              <span> <i class="fa-regular fa-square"></i> 300 sqft</span>
+            </div>
+            <p class="text-sm text-muted-foreground mt-2">For Sale</p>
+          </div>
+        </div>
+        <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+          <div class="relative">
+            <span
+              class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded"
+              >FEATURED</span
+            >
+            <div class="w-full h-[280px] object-cover">
+              <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide
+                  ><img
+                    src="/images/slider/pexels-michaelgaultphotos-6267583.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img src="/images/p16.jpg" alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- <img src="https://placehold.co/300x200" alt="Eaton Garth Penthouse" class="w-full h-70 object-cover" /> -->
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-bold">$580/mo</h2>
+            <h3 class="text-lg font-semibold">Eaton Garth Penthouse</h3>
+            <p class="text-sm text-muted-foreground">386 Flatbush Ave Ext</p>
+            <div class="flex space-x-6 text-sm mt-2">
+              <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+              <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+              <span> <i class="fa-regular fa-square"></i> 180 sqft</span>
+            </div>
+            <p class="text-sm text-muted-foreground mt-2">For Rent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex space-x-4 p-4 featured-bg">
+        <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+          <div class="relative">
+            <span
+              class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded"
+              >FEATURED</span
+            >
+            <div class="w-full h-[280px] object-cover">
+              <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide
+                  ><img src="/images/p9 (1).jpg" alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img src="/images/p16.jpg" alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- <img src="https://placehold.co/300x200" alt="Quality House For Sale" class="w-full h-70 object-cover" /> -->
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-bold">$2,500</h2>
+            <h3 class="text-lg font-semibold">Quality House For Sale</h3>
+            <p class="text-sm text-muted-foreground">873 Bedford Ave</p>
+            <div class="flex space-x-6 text-sm mt-2">
+              <span> <i class="fa-solid fa-bed"></i> 10 Beds</span>
+              <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+              <span> <i class="fa-regular fa-square"></i> 500 sqft</span>
+            </div>
+            <p class="text-sm text-muted-foreground mt-2">For Sale</p>
+          </div>
+        </div>
+        <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+          <div class="relative">
+            <span
+              class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded"
+              >FEATURED</span
+            >
+            <div class="w-full h-[280px] object-cover">
+              <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide
+                  ><img
+                    src="/images/p18-q38zewja9fd6uz2mp1x21m3frqpciovwwa0yxqd04w.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img src="/images/p16.jpg" alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- <img src="https://placehold.co/300x200" alt="Diamond Family Home" class="w-full h-70 object-cover" /> -->
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-bold">$4,500</h2>
+            <h3 class="text-lg font-semibold">Diamond Family Home</h3>
+            <p class="text-sm text-muted-foreground">254 S 2nd St, Brooklyn</p>
+            <div class="flex space-x-6 text-sm mt-2">
+              <span> <i class="fa-solid fa-bed"></i>4 Beds</span>
+              <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+              <span> <i class="fa-regular fa-square"></i> 300 sqft</span>
+            </div>
+            <p class="text-sm text-muted-foreground mt-2">For Sale</p>
+          </div>
+        </div>
+        <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+          <div class="relative">
+            <span
+              class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded"
+              >FEATURED</span
+            >
+            <div class="w-full h-[280px] object-cover">
+              <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide
+                  ><img
+                    src="/images/p3-q38zewj6o1zuc316xjetstvt5igsr3bha23le6xcgg.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img src="/images/p16.jpg" alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg"
+                    alt=""
+                /></swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- <img src="https://placehold.co/300x200" alt="Eaton Garth Penthouse" class="w-full h-70 object-cover" /> -->
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-bold">$580/mo</h2>
+            <h3 class="text-lg font-semibold">Eaton Garth Penthouse</h3>
+            <p class="text-sm text-muted-foreground">386 Flatbush Ave Ext</p>
+            <div class="flex space-x-6 text-sm mt-2">
+              <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+              <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+              <span> <i class="fa-regular fa-square"></i> 180 sqft</span>
+            </div>
+            <p class="text-sm text-muted-foreground mt-2">For Rent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer class="bg-[#181a20] text-[#ffffff] p-8">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://openui.fly.dev/openui/24x24.svg?text=🏠"
+                alt="homez logo"
+                class="mr-2"
+              />
+              <span class="text-xl font-bold">homez</span>
+            </div>
+            <p>Total Free Customer Care</p>
+            <p>+(088) 123 456 789</p>
+            <div class="mt-4">
+              <span>Apps</span>
+              <div class="flex space-x-2 mt-2">
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Download on the Apple Store</a
+                >
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Get in on Google Play</a
+                >
+              </div>
+            </div>
+            <p class="mt-4">Follow us on social media</p>
+            <div class="flex space-x-4 mt-2">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Keep Yourself Up to Date</h3>
+            <input
+              type="email"
+              placeholder="Your email"
+              class="border border-border rounded p-2 mt-2 w-full"
+            />
+            <button
+              class="bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-2 px-4 py-2 rounded"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Popular Search</h3>
+            <ul class="mt-2">
+              <li>Apartments for Sale</li>
+              <li>Apartments for Rent</li>
+              <li>Offices for Sale</li>
+              <li>Offices for Rent</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Quick Links</h3>
+            <ul class="mt-2">
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>Pricing Plans</li>
+              <li>Our Services</li>
+              <li>Contact</li>
+              <li>Careers</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Discovery</h3>
+            <ul class="mt-2">
+              <li>Chicago</li>
+              <li>Los Angeles</li>
+              <li>New Jersey</li>
+              <li>New York</li>
+              <li>California</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>

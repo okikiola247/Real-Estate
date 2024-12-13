@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="menu-bg bg-primary">
+      <nav>
+        <div class="logo">
+          <img
+            src="https://demoapus1.com/homez/wp-content/uploads/2022/12/logo.svg"
+            alt=""
+          />
+        </div>
+
+        <ul class="nav-ul" id="menuList">
+          <li class="link"><a href="/index.html">Home</a></li>
+          <li class="link"><a href="/properties.html">Properties</a></li>
+          <li class="link"><a href="/agent.html">Agent</a></li>
+          <li class="link"><a href="/blog.html">Blog</a></li>
+          <li class="link"><a href="/contact.html">Contact</a></li>
+          <li class="link"><a href="">Login/Register</a></li>
+          <li class="prot"><a href="">Add Properties</a></li>
+        </ul>
+
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <div class="contactMap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34298.74628656077!2d3.3359230055065545!3d6.589794731798773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9271ea07192b%3A0xeb61868a07fcf71c!2sMaryland%2C%20Ikeja%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1731992674843!5m2!1sen!2sng"
+          width="100%"
+          height=""
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section>
+      <div class="contactFormCon">
+        <div class="p-4 contactForm">
+          <h2 class="text-2xl font-bold mb-4">Have questions? Get in touch!</h2>
+          <form class="space-y-8">
+            <div>
+              <label
+                class="block text-sm font-medium text-muted-foreground"
+                for="first-name"
+                >First Name</label
+              >
+              <input
+                class="mt-1 block w-full p-2 border border-border rounded-md"
+                type="text"
+                id="first-name"
+                placeholder="Ali"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-sm font-medium text-muted-foreground"
+                for="last-name"
+                >Last Name</label
+              >
+              <input
+                class="mt-1 block w-full p-2 border border-border rounded-md"
+                type="text"
+                id="last-name"
+                placeholder="Tufan"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-sm font-medium text-muted-foreground"
+                for="email"
+                >Email</label
+              >
+              <input
+                class="mt-1 block w-full p-2 border border-border rounded-md"
+                type="email"
+                id="email"
+                placeholder="example.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-sm font-medium text-muted-foreground"
+                for="message"
+                >Message</label
+              >
+              <textarea
+                class="mt-1 block w-full p-2 border border-border rounded-md"
+                id="message"
+                placeholder="Message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button
+              class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-md"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div class="p-6 bg-background text-foreground contactFormText">
+          <h2 class="text-3xl font-bold">We’d love to hear<br />from you.</h2>
+          <p class="mt-4 text-sm text-muted-foreground">
+            We are here to answer any question you may have. As a partner of
+            corporates, realtor has more than 10,000 offices of all sizes and
+            all potential of session.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto py-10 w-[70%] mt-20">
+        <h2 class="text-2xl font-bold text-center mb-4">Visit Our Office</h2>
+        <p class="text-center text-muted-foreground mb-8">
+          Realtor has more than 10,000 offices of all sizes and all potential of
+          session.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 officeCon">
+          <div class="bg-card p-6 rounded-lg text-center office">
+            <div class="offDiv">
+              <img
+                class="offimg"
+                aria-hidden="true"
+                alt="Eiffel Tower"
+                src="/icons/eiffel-tower.png"
+              />
+            </div>
+            <h3 class="text-lg font-semibold mt-4">Paris</h3>
+            <p class="text-muted-foreground">1333 2nd Ave, Seattle, WA 98118</p>
+            <p class="text-muted-foreground">(315) 905-1234</p>
+            <a href="#" class="text-primary hover:underline mt-2 inline-block"
+              >Open Google Map</a
+            >
+          </div>
+          <div class="bg-card p-6 rounded-lg shadow-lg text-center">
+            <img aria-hidden="true" alt="Big Ben" src="/icons/big-ben.png" />
+            <h3 class="text-lg font-semibold mt-4">London</h3>
+            <p class="text-muted-foreground">1333 2nd Ave, Seattle, WA 98118</p>
+            <p class="text-muted-foreground">(315) 905-1234</p>
+            <a href="#" class="text-primary hover:underline mt-2 inline-block"
+              >Open Google Map</a
+            >
+          </div>
+          <div class="bg-card p-6 rounded-lg text-center office">
+            <img
+              aria-hidden="true"
+              alt="Statue of Liberty"
+              src="/icons/statue-of-liberty (1).png"
+            />
+            <h3 class="text-lg font-semibold mt-4">New York</h3>
+            <p class="text-muted-foreground">1333 2nd Ave, Seattle, WA 98118</p>
+            <p class="text-muted-foreground">(315) 905-1234</p>
+            <a href="#" class="text-primary hover:underline mt-2 inline-block"
+              >Open Google Map</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="needHelp">
+      <div
+        class="bg-background p-6 rounded-lg flex justify-between items-center w-[80%]"
+      >
+        <div>
+          <h2 class="text-2xl font-bold">Need Help? Talk To Our Expert.</h2>
+          <p class="text-muted-foreground">
+            Talk to our experts or browse through more properties.
+          </p>
+        </div>
+        <div class="flex space-x-4">
+          <a
+            href="#"
+            class="border border-primary rounded-lg px-4 py-2 text-primary hover:text-[#ffffff] hover:bg-[#181a20] transition"
+          >
+            Contact Us <span aria-hidden="true">→</span>
+          </a>
+          <button
+            class="bg-[#181a20] hover:bg-[#eb6753] text-[#ffffff] rounded-lg px-4 py-2"
+          >
+            920 851 8585
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer class="bg-[#181a20] text-[#ffffff] p-8">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://openui.fly.dev/openui/24x24.svg?text=🏠"
+                alt="homez logo"
+                class="mr-2"
+              />
+              <span class="text-xl font-bold">homez</span>
+            </div>
+            <p>Total Free Customer Care</p>
+            <p>+(088) 123 456 789</p>
+            <div class="mt-4">
+              <span>Apps</span>
+              <div class="flex space-x-2 mt-2">
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Download on the Apple Store</a
+                >
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Get in on Google Play</a
+                >
+              </div>
+            </div>
+            <p class="mt-4">Follow us on social media</p>
+            <div class="flex space-x-4 mt-2">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Keep Yourself Up to Date</h3>
+            <input
+              type="email"
+              placeholder="Your email"
+              class="border border-border rounded p-2 mt-2 w-full"
+            />
+            <button
+              class="bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-2 px-4 py-2 rounded"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Popular Search</h3>
+            <ul class="mt-2">
+              <li>Apartments for Sale</li>
+              <li>Apartments for Rent</li>
+              <li>Offices for Sale</li>
+              <li>Offices for Rent</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Quick Links</h3>
+            <ul class="mt-2">
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>Pricing Plans</li>
+              <li>Our Services</li>
+              <li>Contact</li>
+              <li>Careers</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Discovery</h3>
+            <ul class="mt-2">
+              <li>Chicago</li>
+              <li>Los Angeles</li>
+              <li>New Jersey</li>
+              <li>New York</li>
+              <li>California</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

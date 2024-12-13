@@ -1,0 +1,63 @@
+.menu-bg {
+  background-color: blue;
+}
+.menu-bg nav {
+  background-color: #181a20;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-ul {
+  background-color: rgb(14, 38, 85);
+  align-items: center;
+}
+
+.contactMap {
+  width: 100%;
+  height: 75vh;
+  background-color: bisque;
+
+  overflow: hidden;
+  padding-top: 9px;
+}
+
+.contactMap iframe {
+  height: inherit;
+  overflow: hidden;
+  position: absolute;
+}
+
+.contactFormCon {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.contactForm {
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.contactFormText {
+  width: 500px;
+}
+
+.office:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+}
+
+.needHelp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+

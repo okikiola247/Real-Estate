@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/agent.css" />
+  </head>
+  <body>
+    <section class="menu-bg bg-primary">
+      <nav>
+        <div class="logo">
+          <img
+            src="https://demoapus1.com/homez/wp-content/uploads/2022/12/logo.svg"
+            alt=""
+          />
+        </div>
+
+        <ul class="nav-ul" id="menuList">
+          <li class="link"><a href="/index.html">Home</a></li>
+          <li class="link"><a href="/properties.html">Properties</a></li>
+          <li class="link"><a href="/agent.html">Agent</a></li>
+          <li class="link"><a href="/blog.html">Blog</a></li>
+          <li class="link"><a href="/contact.html">Contact</a></li>
+          <li class="link"><a href="">Login/Register</a></li>
+          <li class="prot"><a href="">Add Properties</a></li>
+        </ul>
+
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <!-- <div class="bg-card p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-6">
+              <img src="https://placehold.co/100x100" alt="Profile Picture" class="rounded-full mr-4" />
+              <div>
+                <h2 class="text-xl font-bold">Augusta Silva</h2>
+                <p class="text-muted-foreground">Leader Homez</p>
+                <p class="text-yellow-500">⭐ 4.5 • 2 Reviews</p>
+                <p class="text-muted-foreground">📞 (+88)123-555-555 | 📠 (+88)123-555-556</p>
+                <div class="flex space-x-2 mt-2">
+                  <a href="#" class="text-primary">Facebook</a>
+                  <a href="#" class="text-primary">Twitter</a>
+                  <a href="#" class="text-primary">LinkedIn</a>
+                </div>
+              </div>
+            </div> -->
+
+      <div
+        class="p-6 rounded-lg shadow-md flex items-center bg-[#fef4f3] h-[350px] agProfile"
+      >
+        <img
+          class="w-36 h-36 rounded-full mr-4"
+          src="https://placehold.co/96x96"
+          alt="User Profile Picture"
+        />
+        <div class="flex-1">
+          <h2 class="text-4xl font-bold text-foreground">Augusta Silva</h2>
+          <p class="text-muted-foreground mt-4">Leader Homez</p>
+          <div class="flex items-center text-muted-foreground mt-2">
+            <span class="mr-2">⭐ 4.5</span>
+            <span class="mx-2">•</span>
+            <span>2 Reviews</span>
+          </div>
+          <div class="items-center text-muted-foreground mt-2">
+            <span class="mr-4">📞 (+88)123-555-555</span>
+            <span class="mr-4">🖨️ (+88)123-555-555</span>
+            <span class="mr-4">🖨️ (+88)123-555-555</span>
+            <div>
+              <span class="mr-4">
+                <a href="#" class="text-primary hover:underline">Facebook</a>
+              </span>
+              <span class="mr-4">
+                <a href="#" class="text-primary hover:underline">Instagram</a>
+              </span>
+              <span>
+                <a href="#" class="text-primary hover:underline">LinkedIn</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="ml-6 bg-white p-4 rounded-lg shadow-md">
+                  <h3 class="text-lg font-semibold">Contact Augusta Silva</h3>
+                  <form>
+                    <label class="block mt-4">
+                      <span class="text-muted-foreground">Name</span>
+                      <input type="text" class="mt-1 block w-full border border-border rounded-md p-2" placeholder="Enter your name" />
+                    </label>
+                    <button type="submit" class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg w-full">Send</button>
+                  </form>
+                </div> -->
+      </div>
+    </section>
+
+    <section>
+      <div class="abtMeCon">
+        <div class="abtMeLeft">
+          <div class="max-w-2xl mx-auto p-6 bg-background text-foreground">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="mb-4">
+              Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec.
+              Quisque bibendum orci ac nibh facilisis, at malesuada orci congue.
+              Nullam tempus sollicitudin cursus. Ut et adipiscing erat.
+              Curabitur this is a text link libero tempus congue.
+            </p>
+            <p>
+              Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin
+              sagittis dolor sed mi elementum pretium. Donec et justo ante.
+              Vivamus egestas sodales est, eu rhoncus urna semper eu. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. Integer tristique elit lobortis purus bibendum,
+              quis dictum metus porttitor mattis. Phasellus posuere felis sed
+              eros porttitor mattis. Curabitur massa magna, tempor in blandit
+              id, porta in ligula. Aliquam laoreet nisl massa, at interdum
+              mauris sollicitudin et.
+            </p>
+          </div>
+
+          <div
+            class="max-w-2xl mx-auto p-4 bg-card text-card-foreground rounded-lg shadow-md secLay"
+          >
+            <h2 class="text-xl font-semibold mb-4">4.5 (2 Reviews)</h2>
+            <div class="border-b border-muted mb-4 pb-4">
+              <div class="flex items-center mb-2">
+                <img
+                  src="https://placehold.co/40x40"
+                  alt="User Avatar"
+                  class="rounded-full mr-2"
+                />
+                <div>
+                  <span class="font-bold">Admin</span>
+                  <span class="text-muted text-sm block">February 3, 2023</span>
+                </div>
+              </div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae.
+              </p>
+              <div class="mt-2">
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-zinc-300">⭐</span>
+              </div>
+            </div>
+            <div class="border-b border-muted mb-4 pb-4">
+              <div class="flex items-center mb-2">
+                <img
+                  src="https://placehold.co/40x40"
+                  alt="User Avatar"
+                  class="rounded-full mr-2"
+                />
+                <div>
+                  <span class="font-bold">Admin</span>
+                  <span class="text-muted text-sm block">February 3, 2023</span>
+                </div>
+              </div>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt.
+              </p>
+              <div class="mt-2">
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-yellow-400">⭐</span>
+                <span class="text-zinc-300">⭐</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="max-w-lg mx-auto p-6 bg-card rounded-lg shadow-md thLayer"
+          >
+            <h2 class="text-xl font-semibold mb-4">Add a review</h2>
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-1">Rating</label>
+              <div class="flex items-center">
+                <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-1">Name</label>
+              <input
+                type="text"
+                class="border border-border rounded-lg p-2 w-full"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-1">Email</label>
+              <input
+                type="email"
+                class="border border-border rounded-lg p-2 w-full"
+                placeholder="Your email"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label class="flex items-center">
+                <input type="checkbox" class="mr-2" />
+                <span class="text-sm"
+                  >Save my name, email, and website in this browser for the next
+                  time I comment.</span
+                >
+              </label>
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-1"
+                >Write Comment</label
+              >
+              <textarea
+                class="border border-border rounded-lg p-2 w-full"
+                rows="4"
+                placeholder="Your comment"
+              ></textarea>
+            </div>
+
+            <button
+              class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg"
+            >
+              Submit Review
+            </button>
+          </div>
+        </div>
+
+        <div class="abtMeRight">
+          <div class="max-w-md mx-auto p-6 amrForm rounded-lg shadow-md">
+            <h2 class="text-xl font-bold text-foreground mb-4">
+              Contact Augusta Silva
+            </h2>
+            <form>
+              <label class="block mb-2 text-muted-foreground" for="name"
+                >Name</label
+              >
+              <input
+                class="w-full h-[60px] p-2 border border-border rounded mb-4"
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+              <label class="block mb-2 text-muted-foreground" for="email"
+                >Email</label
+              >
+              <input
+                class="w-full h-[60px] p-2 border border-border rounded mb-4"
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <label class="block mb-2 text-muted-foreground" for="phone"
+                >Phone</label
+              >
+              <input
+                class="w-full p-2 h-[60px] border border-border rounded mb-4"
+                type="tel"
+                id="phone"
+                placeholder="Your Phone"
+              />
+
+              <label class="block mb-2 text-muted-foreground" for="message"
+                >Message</label
+              >
+              <textarea
+                class="w-full h-[120px] p-2 border border-border rounded mb-4"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+
+              <button
+                class="w-full bg-accent text-accent-foreground hover:bg-accent/80 p-2 rounded"
+                type="submit"
+              >
+                Send Message <span aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer class="bg-[#181a20] text-[#ffffff] p-8 foot">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://openui.fly.dev/openui/24x24.svg?text=🏠"
+                alt="homez logo"
+                class="mr-2"
+              />
+              <span class="text-xl font-bold">homez</span>
+            </div>
+            <p>Total Free Customer Care</p>
+            <p>+(088) 123 456 789</p>
+            <div class="mt-4">
+              <span>Apps</span>
+              <div class="flex space-x-2 mt-2">
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Download on the Apple Store</a
+                >
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Get in on Google Play</a
+                >
+              </div>
+            </div>
+            <p class="mt-4">Follow us on social media</p>
+            <div class="flex space-x-4 mt-2">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Keep Yourself Up to Date</h3>
+            <input
+              type="email"
+              placeholder="Your email"
+              class="border border-border rounded p-2 mt-2 w-full"
+            />
+            <button
+              class="bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-2 px-4 py-2 rounded"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Popular Search</h3>
+            <ul class="mt-2">
+              <li>Apartments for Sale</li>
+              <li>Apartments for Rent</li>
+              <li>Offices for Sale</li>
+              <li>Offices for Rent</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Quick Links</h3>
+            <ul class="mt-2">
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>Pricing Plans</li>
+              <li>Our Services</li>
+              <li>Contact</li>
+              <li>Careers</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Discovery</h3>
+            <ul class="mt-2">
+              <li>Chicago</li>
+              <li>Los Angeles</li>
+              <li>New Jersey</li>
+              <li>New York</li>
+              <li>California</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

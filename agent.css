@@ -1,0 +1,101 @@
+.agProfile{
+    padding-left: 180px;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+   
+}
+
+.abtMeCon{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+    /* background-color: blueviolet; */
+   
+
+    
+}
+.secLay{
+    height: 500px;
+    /* background-color: chartreuse; */
+}
+.thLayer{
+    height: 700px;
+    /* background-color: rgb(65, 87, 43); */
+}
+
+.abtMeLeft{
+    width: 50%;
+    /* height:2000px ; */
+    /* background-color: brown; */
+    position: relative;
+    top: 500px;
+
+}
+
+.abtMeRight{
+    width: 30%;
+    height:1000px ;
+   
+    position: relative;
+    top: 300px;
+   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   
+
+
+}
+.amrForm{
+    background-color: rgb(255, 255, 255);
+}
+
+.foot{
+    margin-top: 500px;
+}
+
+
+@media (max-width: 960px) {
+    .agProfile{
+        padding-left: 0px;
+        margin-top: 0px;
+        position: absolute;
+       
+       
+    }
+    .abtMeCon{
+        flex: none;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+@media (max-width: 862px) {
+    .abtMeCon{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    }
+    .abtMeLeft{
+        width: 100%;
+    
+    
+    }
+    
+    .abtMeRight{
+        width: 70%;
+        height:700px ;
+       
+        position: relative;
+        top: 300px;
+       
+      
+       
+    
+    
+    }
+
+
+
+}

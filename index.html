@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src=""></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    
+
+  </head>
+  <body>
+    <header>
+      <div class="main-bg">
+        <section class="menu-bg">
+        <nav>
+          
+          <div class="logo">
+            <img src="https://demoapus1.com/homez/wp-content/uploads/2022/12/logo.svg" alt="">
+          </div>
+
+          <ul class="nav-ul" id="menuList">
+            <li class="link"><a href="">Home</a></li>
+            <li class="link"><a href="/properties.html">Properties</a></li>
+            <li class="link"><a href="/agent.html">Agent</a></li>
+            <li class="link"><a href="/blog.html">Blog</a></li>
+            <li class="link"><a href="/contact.html">Contact</a></li>
+            <li class="link display text-white font-bold">Login/Register</li>
+            <li class="prot display text-white font-bold ">Add Properties</li>
+          </ul>
+
+    
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          
+          </div>
+
+        
+        </nav>
+        <div class="fixed inset-0  items-center justify-center signInModal">
+          <div class="bg-white dark:bg-card rounded-lg shadow-lg p-6 w-96 modal">
+            <div class="flex justify-between">
+              <h2 class="text-xl font-semibold  text-zinc-800 dark:text-zinc-200">Welcome to Homez</h2>
+              <button class="close w-[25px] h-[25px] bg-zinc-700 ">x</button>
+            </div>
+            <div class="mt-4">
+              <h3 class="text-lg font-medium text-zinc-700 dark:text-zinc-300">Sign In</h3>
+              
+              <form class="mt-4">
+                <label class="block mb-2 text-sm text-zinc-600 dark:text-zinc-300" for="email">Username Or Email</label>
+                <input type="email" id="email" class="w-full p-2 border border-zinc-300 rounded-lg dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-200" placeholder="Enter your email" required />
+                <label class="block mt-4 mb-2 text-sm text-zinc-600 dark:text-zinc-300" for="password">Password</label>
+                <input type="password" id="password" class="w-full p-2 border border-zinc-300 rounded-lg dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-200" placeholder="Enter your password" required />
+        
+                <div class="flex items-center mt-4">
+                  <input type="checkbox" id="remember" class="mr-2" />
+                  <label for="remember" class="text-sm text-zinc-600 dark:text-zinc-300">Keep me signed in</label>
+                  <a href="#" class="ml-auto text-sm text-blue-500 hover:underline">Lost Your Password?</a>
+                </div>
+        
+                <button type="submit" class="mt-4 w-full bg-primary text-primary-foreground p-2 rounded-lg hover:bg-primary/80">Sign In →</button>
+              </form>
+              <div class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+                <p>Username: <span class="font-medium">agency or agent</span></p>
+                <p>Password: <span class="font-medium">demo</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        
+      </section>
+
+        <section class="nav-sec">
+          <div class="nav-con">
+            <p class="nav-btext"data-aos="fade-right"
+            data-aos-duration="3000">
+              Find the perfect place to <br />Live with your family
+            </p>
+            <p class="nav-stext"data-aos="fade-right"
+            data-aos-easing="ease-in"
+            data-aos-delay="1000"
+            data-aos-offset="0">Let’s find a home that’s perfect for you</p>
+            <div class="conn-top" data-aos="fade-right"
+            data-aos-easing="ease-in"
+            data-aos-delay="1300"
+            data-aos-offset="0">
+              <ul>
+                <li><a class="con-lin" href="">All</a></li>
+                <li><a class="con-lin" href="">For Sale</a></li>
+                <li><a class="con-lin" href="">For Rent</a></li>
+              </ul>
+            </div>
+            <div class="conn-bott" data-aos="fade-right"
+            data-aos-easing="ease-in"
+            data-aos-delay="1300"
+            data-aos-offset="0">
+              <div class="input-div">
+                <img src="./images/home.png" alt="" class="icon" />
+                <input
+                  type="text"
+                  placeholder="Enter an address, neighborhood, city, or ZIP code"
+                  class="main-in"
+                />
+              </div>
+              <i class="fa-solid fa-sliders"></i>
+              <span class="adsm">Advanced</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <p class="lst"data-aos="fade-right"
+            data-aos-easing="ease-in"
+            data-aos-delay="1600"
+            data-aos-offset="0">Or browse featured categories:</p>
+
+            <div class="lastlink" data-aos="fade-right"
+            data-aos-easing="ease-in"
+            data-aos-delay="2000"
+            data-aos-offset="0">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="/images/home.png" alt="" />
+                    Houses
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/home.png" alt="" />
+
+                    Apartments
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/home.png" alt="" />
+
+                    Office
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/home.png" alt="" />
+
+                    Villa</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <section data-aos="fade-up"
+    data-aos-duration="3000">
+      <div class="new-way">
+        <div class="new-way-left">
+          <div class="new-way-left-text">
+            <p class="yourhome">
+              The New Way to Find <br />
+              Your Home
+            </p>
+
+            <p>
+              From as low as $10 per day with <br />
+              limited time offer discounts.
+            </p>
+
+            <button>
+              How it Works <i class="fi fi-br-arrow-up-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="new-way-right">
+          <div class="way-con">
+            <div class="way-topcon">
+              <i class="fi fi-br-house-chimney-user iccc"></i>
+            </div>
+            <div class="way-botcon">
+              <h2>01</h2>
+              <p class="stt">Search Your Dream Home</p>
+              <p>
+                Get ready to launch your real <br />
+                estate website without...
+              </p>
+            </div>
+          </div>
+          <div class="way-con">
+            <div class="way-topcon"><i class="fi fi-ss-people-roof"></i></div>
+            <div class="way-botcon">
+              <h2>02</h2>
+              <p class="stt">Search Your Dream Home</p>
+              <p>
+                Get ready to launch your real <br />
+                estate website without...
+              </p>
+            </div>
+          </div>
+          <div class="way-con">
+            <div class="way-topcon">
+              <i class="fi fi-ss-house-building"></i>
+            </div>
+            <div class="way-botcon">
+              <h2>03</h2>
+              <p class="stt">Search Your Dream Home</p>
+              <p>
+                Get ready to launch your real <br />
+                estate website without...
+              </p>
+            </div>
+          </div>
+          <div class="way-con">
+            <div class="way-topcon">
+              <i class="fi fi-ss-home-location-alt"></i>
+            </div>
+            <div class="way-botcon">
+              <h2>04</h2>
+              <p class="stt">Search Your Dream Home</p>
+              <p>
+                Get ready to launch your real <br />
+                estate website without...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED-LIST -->
+
+    <section class="feaSec" data-aos="fade-up"
+         data-aos-duration="3000">
+      <div class="featured-swipe">
+         <div class="goat">
+            <h1>Discover Our Featured Listings</h1>
+          <div>
+            <span>Aliquam lacinia diam quis lacus euismod</span>
+            <span
+              ><a href="/properties.html"
+                >See All Properties <i class="fi fi-br-arrow-up-right"></i> </a
+            ></span>
+          </div>
+        </div>
+
+
+        <div class="flex space-x-4 p-4 featured-bg ">
+          <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+            <div class="relative">
+              <span class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded">FEATURED</span>
+              <div class="w-full h-[280px] object-cover">
+
+                <swiper-container class="mySwiper" navigation="true">
+                    <swiper-slide><img src="/images/slider/pexels-curtis-adams-1694007-5178055.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p16.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                  </swiper-container>
+            </div>
+              <!-- <img src="https://placehold.co/300x200" alt="Quality House For Sale" class="w-full h-70 object-cover" /> -->
+            </div>
+            <div class="p-4">
+              <h2 class="text-lg font-bold">$2,500</h2>
+              <h3 class="text-lg font-semibold">Quality House For Sale</h3>
+              <p class="text-sm text-muted-foreground">873 Bedford Ave</p>
+              <div class="flex space-x-6 text-sm mt-2">
+                <span> <i class="fa-solid fa-bed"></i> 10 Beds</span>
+                <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+                <span> <i class="fa-regular fa-square"></i> 500 sqft</span>
+              </div>
+              <p class="text-sm text-muted-foreground mt-2">For Sale</p>
+            </div>
+          </div>
+          <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+            <div class="relative">
+              <span class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded">FEATURED</span>
+              <div class="w-full h-[280px] object-cover">
+
+                <swiper-container class="mySwiper" navigation="true">
+                    <swiper-slide><img src="/images/slider/pexels-binyaminmellish-1396122.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p16.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                  </swiper-container>
+            </div>
+              <!-- <img src="https://placehold.co/300x200" alt="Diamond Family Home" class="w-full h-70 object-cover" /> -->
+            </div>
+            <div class="p-4">
+              <h2 class="text-lg font-bold">$4,500</h2>
+              <h3 class="text-lg font-semibold">Diamond Family Home</h3>
+              <p class="text-sm text-muted-foreground">254 S 2nd St, Brooklyn</p>
+              <div class="flex space-x-6 text-sm mt-2">
+                <span> <i class="fa-solid fa-bed"></i>4 Beds</span>
+                <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+                <span> <i class="fa-regular fa-square"></i> 300 sqft</span>
+              </div>
+              <p class="text-sm text-muted-foreground mt-2">For Sale</p>
+            </div>
+          </div>
+          <div class="bg-card rounded-lg shadow-lg overflow-hidden featured-box">
+            <div class="relative">
+              <span class="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded">FEATURED</span>
+              <div class="w-full h-[280px] object-cover">
+
+                <swiper-container class="mySwiper" navigation="true">
+                    <swiper-slide><img src="/images/slider/pexels-michaelgaultphotos-6267583.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p11-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p12-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p13-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p15-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p16.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p7-q38zexh4g9e6yad4dizgcjxw67cm3g01xnxjej24fw.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="/images/p4-q38zewja9fcwmoehj0kts26fkth8vqwblja1x93im4.jpg" alt=""></swiper-slide>
+                  </swiper-container>
+            </div>
+              <!-- <img src="https://placehold.co/300x200" alt="Eaton Garth Penthouse" class="w-full h-70 object-cover" /> -->
+            </div>
+            <div class="p-4">
+              <h2 class="text-lg font-bold">$580/mo</h2>
+              <h3 class="text-lg font-semibold">Eaton Garth Penthouse</h3>
+              <p class="text-sm text-muted-foreground">386 Flatbush Ave Ext</p>
+              <div class="flex space-x-6 text-sm mt-2">
+                <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+                <span> <i class="fa-solid fa-shower"></i> 2 Baths</span>
+                <span> <i class="fa-regular fa-square"></i> 180 sqft</span>
+              </div>
+              <p class="text-sm text-muted-foreground mt-2">For Rent</p>
+            </div>
+          </div>
+        </div>
+          
+        
+  </div>
+       
+         
+      </div>
+    </section>
+
+
+
+    <!-- map section  -->
+
+
+    <section class="sec-map" data-aos="fade-up"
+    data-aos-duration="3000">
+      <div class="map-slide">
+        <div class="goat">
+          <h1>Explore Cities</h1>
+          <div>
+            <span>Aliquam lacinia diam quis lacus euismod</span>
+            <span
+              ><a href=""
+                >All Cities<i class="fi fi-br-arrow-up-right"></i> </a
+            ></span>
+          </div>
+
+          <div class="swiper-body">
+
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                  <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380521.7257766986!2d-88.35580977181253!3d41.83204514951364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sng!4v1719561582206!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                      <h2 class="user-name">Chicago</h2>
+                      <p class="user-profession">1 Property</p>
+                    
+                    </div>
+                    <div class="card-item swiper-slide">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06225701555!2d-74.30932678804537!3d40.697019288954785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sng!4v1719562862864!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+                    <h2 class="user-name">New york</h2>
+                    <p class="user-profession">10 Property</p>
+                  
+                  </div>
+                  <div class="card-item swiper-slide">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.8828097141!2d-118.7413841637729!3d34.0200392355322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1719562669728!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                  <h2 class="user-name">Los Angeles</h2>
+                  <p class="user-profession">3 Property</p>
+                
+                </div>
+                <div class="card-item swiper-slide">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429158.12612201495!2d-117.43863107477829!3d32.82412051610039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1719562948162!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+                <h2 class="user-name">San Diego</h2>
+                <p class="user-profession">4 Property</p>
+              
+              </div>
+              <div class="card-item swiper-slide">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.18159932918!2d-122.52000113525247!3d37.757671314949214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1719563117008!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+              <h2 class="user-name">San Francisco</h2>
+              <p class="user-profession">9 Property</p>
+            
+            </div>
+            <div class="card-item swiper-slide">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380521.7257766986!2d-88.35580977181253!3d41.83204514951364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sng!4v1719561582206!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+            <h2 class="user-name">Chicago</h2>
+            <p class="user-profession">1 Property</p>
+          
+          </div>
+
+          <div class="card-item swiper-slide">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.18159932918!2d-122.52000113525247!3d37.757671314949214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1719563117008!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+          <h2 class="user-name">San Francisco</h2>
+          <p class="user-profession">9 Property</p>
+        
+        </div>
+
+        <div class="card-item swiper-slide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429158.12612201495!2d-117.43863107477829!3d32.82412051610039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1719562948162!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+        <h2 class="user-name">San Diego</h2>
+        <p class="user-profession">4 Property</p>
+      
+      </div>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-slide-button swiper-button-prev"></div>
+                  <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+        
+
+
+
+    </section>
+
+<!-- selling option -->
+
+    <section>
+      <div class="main-opt">
+        <div class="sub-opt">
+          <div class="sub-opt-left" data-aos="fade-right"data-aos-duration="3000">
+            <div>
+              <h3>Let’s Find The Right <br>Selling Option For You</h3>
+             <p>
+              As the complexity of buildings to increase, the field <br> of architecture.
+             </p>
+             <ul>
+              <li><i class="fa-solid fa-square-check"></i>Find excellent deals</li>
+              <li><i class="fa-solid fa-square-check"></i>Friendly host & Fast support</li>
+              <li><i class="fa-solid fa-square-check"></i>List your own property</li>
+             </ul>
+             <button>
+              How it Works <i class="fi fi-br-arrow-up-right"></i>
+            </button>
+
+          </div>
+
+
+
+
+          </div>
+          <div class="sub-opt-right"data-aos="fade-left"data-aos-duration="3000">
+            <div class="sspl">
+              <div>
+
+              </div>
+            </div>
+            <div class="sspr">
+              <div></div>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="test" data-aos="fade-up"
+      data-aos-duration="3000">
+        <div class="test-head">
+          <h3>Testimonials</h3>
+          <p>Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+
+        <div class="test-cent">
+          <h2>
+            <i class="fa-solid fa-quote-left"></i>
+            <!-- <img src="/images/left-quote.png" alt=""> -->
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto saepe minima soluta accusantium veritatis temporibus molestias nostrum dolore, vitae quibusdam dolores nisi enim similique cumque consequuntur laboriosam ipsam sit eligendi!
+       
+          </p>
+          <span class="paa">
+            Okikiola Ola
+          </span>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+
+    <section class="memb-sec" data-aos="fade-up"
+    data-aos-duration="3000">
+      <div class="test">
+        <div class="test-head">
+          <h3>Membership Plans</h3>
+          <p>Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+
+        <div class="member-main">
+          <div class="member-sub">
+            <div class="memm">
+             <div class="member-sub2">
+              <p>
+                Professional 
+              </p>
+              <h1>
+                $560.00
+              </h1>
+            </div>
+
+            <div class="member-sub3">
+              <p>
+                <i class="fa-solid fa-award"></i>
+              </p>
+            </div>
+          </div>
+            <div class="mem-info">
+              <p>Professional listing submission, active for 60 days</p>
+
+              <ul>
+                <li><i class="fa-solid fa-square-check"></i>All Operating Supported</li>
+                <li><i class="fa-solid fa-square-check"></i>20 Property Listings</li>
+                <li><i class="fa-solid fa-square-check"></i>60 Days Availability</li>
+                <li><i class="fa-solid fa-square-check"></i>Feature Properties</li>
+                <li><i class="fa-solid fa-square-check"></i>24/7 Full support</li>
+               </ul>
+          
+            </div>
+
+          <a href="">
+            <button>
+              Add To Cart <i class="fi fi-br-arrow-up-right"></i>
+            </button>
+          </a>  
+
+          </div>
+   
+          <div class="member-subb">
+            <div class="memm">
+              <div class="member-sub2">
+               <p>
+                 Business 
+               </p>
+               <h1>
+                 $980.00
+               </h1>
+             </div>
+ 
+             <div class="member-sub3">
+               <p>
+                 <i class="fa-solid fa-award"></i>
+               </p>
+             </div>
+           </div>
+             <div class="mem-info">
+               <p>Professional listing submission, active for 60 days</p>
+ 
+               <ul>
+                 <li><i class="fa-solid fa-square-check"></i>All Operating Supported</li>
+                 <li><i class="fa-solid fa-square-check"></i>20 Property Listings</li>
+                 <li><i class="fa-solid fa-square-check"></i>60 Days Availability</li>
+                 <li><i class="fa-solid fa-square-check"></i>Feature Properties</li>
+                 <li><i class="fa-solid fa-square-check"></i>24/7 Full support</li>
+                </ul>
+           
+             </div>
+ 
+           <a href="">
+             <button>
+               Add To Cart <i class="fi fi-br-arrow-up-right"></i>
+             </button>
+           </a>  
+          </div>
+
+
+          <div class="member-sub">
+            <div class="memm">
+              <div class="member-sub2">
+               <p>
+                 Basics 
+               </p>
+               <h1>
+                 $360.00
+               </h1>
+             </div>
+ 
+             <div class="member-sub3">
+               <p>
+                 <i class="fa-solid fa-award"></i>
+               </p>
+             </div>
+           </div>
+             <div class="mem-info">
+               <p>Professional listing submission, active for 60 days</p>
+ 
+               <ul>
+                 <li><i class="fa-solid fa-square-check"></i>All Operating Supported</li>
+                 <li><i class="fa-solid fa-square-check"></i>20 Property Listings</li>
+                 <li><i class="fa-solid fa-square-check"></i>60 Days Availability</li>
+                 <li><i class="fa-solid fa-square-check"></i>Feature Properties</li>
+                 <li><i class="fa-solid fa-square-check"></i>24/7 Full support</li>
+                </ul>
+           
+             </div>
+ 
+           <a href="">
+             <button>
+               Add To Cart <i class="fi fi-br-arrow-up-right"></i>
+             </button>
+           </a>  
+          </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+    <section>
+      <div class="down">
+
+        <div class="down-left" data-aos="fade-right"
+        data-aos-duration="3000"></div>
+        <div class="down-right"data-aos="fade-left"
+        data-aos-duration="3000">
+          <button>Start today</button>
+          <h3>Download the App</h3>
+          <p>Take classes on the go with the realton app. Stream or download to <br>watch on the plane, the subway, or wherever you learn best.</p>
+          <div>
+            <a href="/" tabIndex="0"><img class="bn46" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"alt="bn45"/></a>
+
+
+
+            <a href="/" tabIndex="0"><img class="bn45" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="bn45"/></a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <footer class="bg-[#181a20]  text-[#ffffff] p-8">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://openui.fly.dev/openui/24x24.svg?text=🏠"
+                alt="homez logo"
+                class="mr-2"
+              />
+              <span class="text-xl font-bold">homez</span>
+            </div>
+            <p>Total Free Customer Care</p>
+            <p>+(088) 123 456 789</p>
+            <div class="mt-4">
+              <span>Apps</span>
+              <div class="flex space-x-2 mt-2">
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Download on the Apple Store</a
+                >
+                <a
+                  href="#"
+                  class="bg-secondary text-secondary-foreground px-4 py-2 rounded"
+                  >Get in on Google Play</a
+                >
+              </div>
+            </div>
+            <p class="mt-4">Follow us on social media</p>
+            <div class="flex space-x-4 mt-2">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Keep Yourself Up to Date</h3>
+            <input
+              type="email"
+              placeholder="Your email"
+              class="border border-border rounded p-2 mt-2 w-full"
+            />
+            <button
+              class="bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-2 px-4 py-2 rounded"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Popular Search</h3>
+            <ul class="mt-2">
+              <li>Apartments for Sale</li>
+              <li>Apartments for Rent</li>
+              <li>Offices for Sale</li>
+              <li>Offices for Rent</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Quick Links</h3>
+            <ul class="mt-2">
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>Pricing Plans</li>
+              <li>Our Services</li>
+              <li>Contact</li>
+              <li>Careers</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold">Discovery</h3>
+            <ul class="mt-2">
+              <li>Chicago</li>
+              <li>Los Angeles</li>
+              <li>New Jersey</li>
+              <li>New York</li>
+              <li>California</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+<!-- <section>
+  <div class="footer">
+
+    
+      <div class="foot-head">
+        <img src="/images/logo.svg" alt="">
+        <ul>
+          <li>Follow us</li>
+          <li><a href=""> <i class="fa-brands fa-facebook-f"></i></a></li>
+          <li> <a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+          <li> <a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+          <li> <a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+
+
+      </div>
+
+      <div class="foot-mainz">
+        <div class="foot-main">
+      
+        <ul>
+          <p>Popular Search</p>
+          <li><a href="">Apartment for Sale</a></li>
+          <li><a href="">Apartment for Rent</a></li>
+          <li><a href="">Offices for Sale</a></li>
+          <li><a href="">Offices for Rent</a></li>
+          
+     
+        </ul>
+         
+
+        <ul>
+          <p>Quick Links</p>
+          <li><a href="">Terms of Use</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Pricing Plans</a></li>
+          <li><a href="">Our Servicest</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href=""> Careers</a></li>
+          <li><a href="">FAQs</a></li>
+     
+        </ul>
+
+        <ul>
+          <p>Discovery</p>
+          <li><a href="">Chicago</a></li>
+          <li><a href="">Los Angeles</a></li>
+          <li><a href=""> New Jersey</a></li>
+          <li><a href=""> New York</a></li>
+          <li><a href="">California</a></li>  
+     
+        </ul>
+      </div>
+      <div class="frt">
+
+        <div class="custo">
+          <ul>
+            <p>Total Free Customer Care</p>
+            <li><a href="">+(088) 123 456 789</a></li>
+            <li><a href="">Keep Yourself Up to Dates</a></li>
+          
+          </ul>
+
+          <ul>
+            <p>Live Support?
+            </p>
+            <li><a href="">hi@okiki.com</a></li>
+            
+
+          </ul>
+         
+         
+
+        </div>
+        <div>
+          <input type="text" class="inp" placeholder="Your Email">
+        </div>
+
+        
+      </div>
+      </div>
+
+      <div class="copy">
+        <p>© okiki – All rights reserved</p>
+        <ul>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      </div>
+
+    
+
+  </div>
+  <div class="bg-foot">
+    <img src="/images/bg-footer6-300x149.png" alt="" class="bggg">
+  </div>
+
+
+
+
+
+</section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+
+  </body>
+</html>
